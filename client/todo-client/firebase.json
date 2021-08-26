@@ -1,0 +1,25 @@
+{
+  "hosting": {
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/signin",
+        "destination":"/index.html"
+      },
+      {
+        "source": "/signup",
+        "destination":"/index.html"
+      },
+      {
+        "source": "**",
+        "function":"app"
+      }
+      
+    ]
+  }
+}
